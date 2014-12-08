@@ -1,19 +1,35 @@
-<%= label_tag :letters %>
-<%= text_field_tag :letters %>
+<div class="container">
 
-<%= label_tag :start_with %>
-<%= text_field_tag :start_with %>
+  <div class="scrabble">
+    <div class="col-md-12">
+      <div class="col-md-6">
+        <%= label_tag :letters %>
+        <%= text_field_tag :letters %>
+      </div>
 
-<%= label_tag :end_with %>
-<%= text_field_tag :end_with %>
+      <div class="col-md-6">
+        <%= label_tag :start_with %>
+        <%= text_field_tag :start_with %>
+      </div>
 
-<%= label_tag :contains %>
-<%= text_field_tag :contains %>
+      <div class="col-md-6">
+        <%= label_tag :end_with %>
+        <%= text_field_tag :end_with %>
+      </div>
 
-<div id="find-words">
-  Find words
+      <div class="col-md-6">
+        <%= label_tag :contains %>
+        <%= text_field_tag :contains %>
+      </div>
+    </div>
+
+    <button id="find-words" type="button" class="btn btn-primary">Find Words</button>
+
+    <h2>Search Results</h2>
+    <div class="search-results">
+  </div>
+
 </div>
 
-<h2>Search Results</h2>
-<div class="search-results">
 </div>
+
